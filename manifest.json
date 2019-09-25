@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "wa_ddos",
+  "version": "1.0",
+
+  "description": "ddos your friend",
+
+  "icons": {
+    "48": "wa.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+
+}
